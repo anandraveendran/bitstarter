@@ -7,7 +7,7 @@ var buffer = new Buffer(20);
 fs.readFileSync('index.html', function (err, data) {
   if (err) throw err;
   console.log(data);
-response.send(buffer.toString('utf8', 0, buffer.length));
+response.send(buffer.toString());
 });
 
 });
